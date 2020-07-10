@@ -5,7 +5,7 @@ def turn(board)
     puts "Invalid input."
     turn(board)
   end
-  
+  puts "test"
 end
 
 def display_board(board)
