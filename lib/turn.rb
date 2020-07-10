@@ -11,7 +11,7 @@ def turn(board)
     puts "Invalid move."
     turn(board)
   end
-  move(board, input)
+  move(board, ind)
 end
 
 def display_board(board)
