@@ -1,6 +1,11 @@
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
+  if !(input.between?(1, 9))
+    puts "Invalid input."
+    turn(board)
+  end
+  
 end
 
 def display_board(board)
