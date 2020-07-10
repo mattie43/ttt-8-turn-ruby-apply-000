@@ -1,6 +1,7 @@
 def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip.to_i
+  ind = input_to_index(input)
   if !(input.between?(1, 9))
     puts "Invalid input."
     turn(board)
