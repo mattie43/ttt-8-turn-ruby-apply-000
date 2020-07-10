@@ -10,7 +10,7 @@ def turn(board)
     puts "Invalid move."
     turn(board)
   end
-  move(board, ind)
+  move(board, input)
 end
 
 def display_board(board)
@@ -39,4 +39,5 @@ end
 
 def move(board, ind, token = "X")
   board[ind] = token
+  display_board(board)
 end
