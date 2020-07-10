@@ -17,3 +17,7 @@ def position_taken?(board, ind)
     return false
   end
 end
+
+def move(board, ind, token = "X")
+  board[ind] = token
+end
