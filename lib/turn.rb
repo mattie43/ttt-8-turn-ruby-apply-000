@@ -5,7 +5,12 @@ def turn(board)
     puts "Invalid input."
     turn(board)
   end
-  puts "test"
+  input -= 1
+  if !(valid_move?(board, input))
+    puts "Invalid move."
+    turn(board)
+  end
+  move(board, ind)
 end
 
 def display_board(board)
