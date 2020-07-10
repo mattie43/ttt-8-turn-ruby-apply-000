@@ -2,17 +2,21 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip.to_i
   ind = input_to_index(input)
-  if !(input.between?(1, 9))
+  if !(ind.between?(1, 9))
     puts "Invalid input."
     turn(board)
   end
-  input -= 1
-  if !(valid_move?(board, input))
+  ind -= 1
+  if !(valid_move?(board, ind))
     puts "Invalid move."
     turn(board)
   end
   move(board, ind)
 end
+
+def input_to_index(input)
+  ind = input.to_i
+  if ind 
 
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
